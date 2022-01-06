@@ -13,8 +13,8 @@ def validPassword(password):
     numberOfNumbers = 0
     numberOfUppercase = 0
     numberOfLowercase = 0
-    for i in range(len(password)):
-        if password[i] in
+    #for i in range(len(password)):
+    #    if password[i] in
     return numberOfNumbers > 0 and numberOfUppercase > 0 and numberOfLowercase > 0
     pass
 
