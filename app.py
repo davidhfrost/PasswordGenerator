@@ -8,15 +8,16 @@ uppercaseList = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm'
 def home():
     return render_template("primary.html")
 
-
+"""
 def validPassword(password):
     numberOfNumbers = 0
     numberOfUppercase = 0
     numberOfLowercase = 0
-    #for i in range(len(password)):
-    #    if password[i] in
+    for i in range(len(password)):
+        if password[i] in
     return numberOfNumbers > 0 and numberOfUppercase > 0 and numberOfLowercase > 0
     pass
+"""
 
 
 @app.route("/generate", methods=["POST"])
@@ -32,7 +33,7 @@ def generate():
     if uc is not None:
         charList.extend(['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
     password = ""
-    while (validPassword(password)):
+    #while (validPassword(password)):
 
     for i in range(10):
         password = password + choice(charList)
